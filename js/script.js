@@ -31,7 +31,7 @@ document.getElementById("guess").addEventListener("click", () => {
   
 
   trialsLeft.innerHTML = numberOfTrials;
-  if (answer === correctAnswer) {
+  if (answer == correctAnswer) {
 
     guessAlert.classList.remove("alert");
 
@@ -43,12 +43,12 @@ document.getElementById("guess").addEventListener("click", () => {
 
     alertText.innerHTML = `You won with ${count} trial(s) left you used ${5-count} trial(s)`;
 
-    userGuess.disabled = true
+    userGuess.disabled = true;
 
-    guessButton.disabled = true
+    guessButton.disabled = true;
 
     restartButton.style.display = "block";
-  } else if(answer != correctAnswer){
+  } else {
     guessAlert.classList.remove("alert");
     guessAlert.classList.remove("alert-success");
     

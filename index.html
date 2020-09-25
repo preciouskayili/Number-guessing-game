@@ -17,12 +17,12 @@
       <h3 class="text-center">Number guessing game</h3>
       <p class="text-center">Guess a number from 0-10 after you get the correct answer <br>the game is ended and your number of trials is shown to you</p>
       <h6 class="text-danger text-center" id="trialsLeft"></h6>  
-      <form action="index.html">
+      <form action="index.html" method="post" form="guessForms">
           <div class="input-group my-0">
               <input type="number" id="userGuess" placeholder="Guess a number from 0-9" min="0" max="9" class="form-control">
           </div>
         </form>
-        <button class="btn btn-unique col-md-3 d-block mx-auto" id="guess">Guess</button>
+        <button class="btn btn-unique col-md-3 d-block mx-auto" id="guess" form="guessForm">Guess</button>
         <button class="btn btn-unique col-md-3 mx-auto" id="startAgain" style="display: none;" onclick="javascript: window.location.replace('index.html')">Start again</button>
     </div>
   </div>
